@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Register</title>
+</head>
+
+<body>
+    <div class="container">
+        <form action="" id="form">
+            <h1>Register</h1>
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" placeholder="Enter name" name="username">
+                <div class="error"></div>
+            </div>
+            <div class="gen">
+                <label for="Gender">Gender:</label>
+                <input type="radio" name="user-Gender" id="Male" value="Male"> Male
+                <input type="radio" name="user-Gender" id="Female" value="Female"> Female
+                <input type="radio" name="user-Gender" id="Others" value="Others"> Others
+            </div>
+            <div class="input-group"> <label for="Mobile"> Mobile:</label>
+                <input type="tel" name="user-Mobile" id="Mobile" placeholder="Enter Mobile Number" pattern="[0-9]{10}"
+                    required>
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Enter email id" name="email" required>
+                <div class="error"></div>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                <div class="error"></div>
+                <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+
+</html>
